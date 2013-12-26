@@ -4,10 +4,9 @@
     "cache": "0"
   },
   "colors": {
-    "text": "white",
-    "description": "green",
-    "example": "red",
-    "example-background": "black",
-    "example-token": "white"
+    "list": "white",
+    "command": "red",
+    "command-background": "white",
+    "command-token": "black"
   }
 }
