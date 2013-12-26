@@ -33,11 +33,13 @@
     "ansistyles": "~0.1.3",
     "async": "~0.2.9",
     "mkdirp": "~0.3.5",
-    "unhtml": "~0.1.0"
+    "unhtml": "~0.1.0",
+    "js-match": "git+https://github.com/TabDigital/js-match.git"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
     "connect": "~2.11.2",
-    "should": "~2.1.1"
+    "should": "~2.1.1",
+    "sinon": "~1.7.3"
   }
 }
