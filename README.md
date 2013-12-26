@@ -22,6 +22,24 @@ What about:
 $ npm install -g tldr
 ```
 
+If the default behaviour (colors, local cache) doesn't suit you, you can override the config with a `~/.tldr` file:
+
+```json
+{
+  "remote": {
+    "url": "http://raw.github.com/rprieto/tldr/master/pages",
+    "cache": "30 days"
+  },
+  "colors": {
+    "text": "white",
+    "description": "green",
+    "example": "red",
+    "example-background": "black",
+    "example-token": "white"
+  }
+}
+```
+
 # Contributing
 
 Your favourite command isn't covered? You can think of more examples?
@@ -36,13 +54,13 @@ The rough guidelines are:
 
 # Dev notes
 
-- To run the tests:
+To run the tests:
 
 ```
 npm test
 ```
 
-- To try out new fetching/rendering logic locally
+To try out new fetching/rendering logic locally
 
 ```
 npm start

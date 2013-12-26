@@ -1,13 +1,13 @@
- {
-   "remote": {
-     "url": "http://localhost:3000",
-     "cache": 0
-   },
-   "colors": {
-     "text": "white",
-     "description": "green",
-     "example": "red",
-     "example-background": "black",
-     "example-token": "white"
-   }
- }
+{
+  "remote": {
+    "url": "http://localhost:3000/pages",
+    "cache": "0"
+  },
+  "colors": {
+    "text": "white",
+    "description": "green",
+    "example": "red",
+    "example-background": "black",
+    "example-token": "white"
+  }
+}

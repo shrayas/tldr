@@ -1,13 +1,13 @@
- {
-   "remote": {
-     "url": "http://raw.github.com/rprieto/tldr/master",
-     "cache": "please"
-   },
-   "colors": {
-     "text": "foo",
-     "description": "green",
-     "example": "red",
-     "example-background": "black",
-     "example-token": "white"
-   }
- }
+{
+  "remote": {
+    "url": "http://raw.github.com/rprieto/tldr/master/pages",
+    "cache": "foo"
+  },
+  "colors": {
+    "text": "foo",
+    "description": "green",
+    "example": "red",
+    "example-background": "black",
+    "example-token": "white"
+  }
+}

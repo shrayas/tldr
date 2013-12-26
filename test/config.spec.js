@@ -46,6 +46,12 @@ describe('Config', function() {
       config.getPath.restore();
     });
 
+    it('should validate durations', function() {
+      config.duration('foo').should.include('should be a duration');
+      should.not.exist(config.duration('1s'));
+      should.not.exist(config.duration('5 days'));
+    });
+
     it('should validate ANSI colors', function() {
       config.color('foo').should.include('should be an ANSI color');
       should.not.exist(config.color('white'));
@@ -56,7 +62,7 @@ describe('Config', function() {
       config.getPath.returns(__dirname +'/config/valid.json');
       config.get(function(err, res) {
         should.not.exist(err);
-        res.remote.cache.should.be.above(0);
+        res.remote.cache.should.eql('1 minute');
         done();
       });
     });
@@ -65,7 +71,7 @@ describe('Config', function() {
       config.getPath.returns(__dirname +'/config/invalid.json');
       config.get(function(err, res) {
         err.should.include('invalid.json');
-        err.should.include('remote.cache should be a number');
+        err.should.include('remote.cache should be a duration');
         err.should.include('colors.text should be an ANSI color');
         done();
       });
